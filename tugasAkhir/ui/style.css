@@ -1,0 +1,126 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    width: 750px;
+    background: #fff;
+    padding: 30px 0px;
+    border-radius: 10px;
+}
+
+.drag-area {
+    border: 2px dashed #000000;
+    width: 95%;
+    max-width: 700px;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.drag-area.active {
+    border: 2px dashed #000000;
+}
+
+.drag-area .icon {
+    font-size: 100px;
+    color: #000000;
+}
+
+.drag-area img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+.btn-container {
+    display: flex;
+    margin-top: 1rem;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label {
+    background-color: #000000;
+    padding: 10px 10px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 30px;
+    border-radius: 5px;
+    width: 80px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+#pick-color {
+    background-color: #000000;
+    border: none;
+    color: #fff;
+    margin-left: auto;
+    margin-right: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90px;
+    font-size: 0.8rem;
+}
+
+.hide {
+    display: none;
+}
+
+#picked-colors-container {
+    margin-top: 20px;
+}
+
+.picked-color-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.picked-color-card .color-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.picked-color-card .color-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.picked-color-card input {
+    width: 150px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.picked-color-card button {
+    background-color: #3598DB;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+}
+
+button {
+    height: 50px;
+}
